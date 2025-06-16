@@ -9,15 +9,15 @@ export default [
                     // eslint-disable-next-line
                     image: 'https://images.unsplash.com/photo-1518699705938-d9be21ec6ff6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&h=450&q=50',
                     title: 'Welcome!',
-                    text: 'This is a site built with Eleventy + Preact.',
-                },
+                    text: 'This is a site built with Eleventy + Preact.'
+                }
             },
             {
                 name: 'content',
                 data: {
                     // eslint-disable-next-line
                     html: '<h1>Lorem Ipsum</h1><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p><p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p><p>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p><p>Ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p><p><a href="/page-2/">Make sure to also visit Page 2!</a></p>',
-                },
+                }
             },
             {
                 name: 'masonry',
@@ -58,9 +58,9 @@ export default [
                             id: 6,
                             // eslint-disable-next-line
                             src: 'https://images.unsplash.com/photo-1465726208258-198e6f4402ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80',
-                        },
-                    ],
-                },
+                        }
+                    ]
+                }
             },
             {
                 name: 'teaser',
@@ -71,7 +71,7 @@ export default [
                         title: 'Lorem Ipsum',
                         // eslint-disable-next-line
                         text: 'Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
-                        link: 'https://markus.oberlehner.net',
+                        link: 'https://markus.oberlehner.net'
                     },
                     {
                         // eslint-disable-next-line
@@ -79,7 +79,7 @@ export default [
                         title: 'Lorem Ipsum',
                         // eslint-disable-next-line
                         text: 'Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
-                        link: 'https://markus.oberlehner.net',
+                        link: 'https://markus.oberlehner.net'
                     },
                     {
                         // eslint-disable-next-line
@@ -87,12 +87,12 @@ export default [
                         title: 'Lorem Ipsum',
                         // eslint-disable-next-line
                         text: 'Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
-                        link: 'https://markus.oberlehner.net',
-                    },
-                ],
-            },
+                        link: 'https://markus.oberlehner.net'
+                    }
+                ]
+            }
         ],
-        slug: '/',
+        slug: '/'
     },
     {
         date: new Date(),
@@ -104,17 +104,17 @@ export default [
                     // eslint-disable-next-line
                     image: 'https://images.unsplash.com/photo-1517690623533-ca77a9a4b402?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&h=450&q=50',
                     title: 'Welcome to page 2!',
-                    text: 'This is a site built with Eleventy + Preact.',
-                },
+                    text: 'This is a site built with Eleventy + Preact.'
+                }
             },
             {
                 name: 'content',
                 data: {
                     // eslint-disable-next-line
                     html: '<h1>Lorem Ipsum</h1><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p><p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p><p>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p><p>Ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>',
-                },
-            },
+                }
+            }
         ],
-        slug: '/page-2',
-    },
+        slug: '/page-2'
+    }
 ]

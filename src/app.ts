@@ -1,5 +1,5 @@
 import { html, render } from 'htm/preact'
-import whenVisible from './utils/when-visible'
+import whenVisible from './utils/when-visible.js'
 import type { ComponentType } from 'preact'
 import LikeForm from './components/like-form'
 
@@ -14,8 +14,8 @@ declare global {
     }
 }
 
-const componentMap: Record<string, ComponentType> = {
-    LikeForm,
+const componentMap: Record<string, ComponentType<any>> = {
+    LikeForm
 }
 
 const $componentMarkers
@@ -31,8 +31,7 @@ Array.from($componentMarkers).forEach(($marker) => {
 
         render(
             html`<${Component} ...${props}/>`,
-            $component.parentNode as HTMLElement,
-            $component,
+            $component.parentNode as HTMLElement
         )
     })
 })

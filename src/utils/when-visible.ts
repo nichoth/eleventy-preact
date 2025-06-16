@@ -1,7 +1,7 @@
-module.exports = function whenVisible (
+export default function whenVisible (
     $element,
     callback,
-    options:IntersectionObserverInit
+    options?:IntersectionObserverInit
 ) {
     if (typeof IntersectionObserver === 'undefined') {
         callback()

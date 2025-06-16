@@ -22,9 +22,9 @@ export default class {
                 data: 'pages',
                 size: 1,
                 alias: 'page',
-                addAllPagesToCollections: true,
+                addAllPagesToCollections: true
             },
-            permalink: ({ page }: PageData) => `/${page.slug}/index.html`,
+            permalink: ({ page }: PageData) => `/${page.slug}/index.html`
         }
     }
 

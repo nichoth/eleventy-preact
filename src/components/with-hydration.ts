@@ -5,7 +5,7 @@ import isServer from '../utils/is-server'
 let id = 0
 
 const withHydration = <P extends object>(
-    Component: ComponentType<P>,
+    Component: ComponentType<P>
 ): ComponentType<P> => (props: P) => {
         id += 1
 
