@@ -3,7 +3,7 @@ import { html } from 'htm/preact';
 // No direct CSS import, but if you have one, use './base-wrapper.css'
 
 const BaseWrapper = ({ children }) => html`
-  <div class="BaseWrapper">
+  <div class="base-wrapper">
     ${children}
   </div>
 `;

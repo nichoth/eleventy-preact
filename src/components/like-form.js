@@ -1,7 +1,7 @@
 import { html } from 'htm/preact';
 import { useState } from 'preact/hooks';
 import withHydration from './with-hydration.js';
-import './LikeForm.css';
+import './like-form.css';
 
 function LikeForm({ id }) {
   const [likes, setLikes] = useState(0);
@@ -14,11 +14,11 @@ function LikeForm({ id }) {
     <form
       action=${`/like/${id}`}
       method="post"
-      class="LikeForm"
+      class="like-form"
     >
       <button
         aria-label="Like this image"
-        class="LikeForm__button"
+        class="like-form-button"
         onClick=${handleClick}
       >
         ❤️

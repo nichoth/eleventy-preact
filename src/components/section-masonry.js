@@ -4,13 +4,13 @@ import LikeForm from './like-form.js';
 
 const SectionMasonry = ({ data }) => html`
   <${BaseWrapper}>
-    <div class="SectionMasonry">
+    <div class="section-masonry">
       ${data.images.map(({ alt, id, src }) => html`
-        <div class="SectionMasonry__item">
+        <div class="section-masonry-item">
           <img
             src=${src}
             alt=${alt}
-            class="SectionMasonry__image"
+            class="section-masonry-image"
             loading="lazy"
           />
           <${LikeForm} id=${id}/>

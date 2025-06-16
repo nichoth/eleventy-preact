@@ -1,5 +1,5 @@
 import { html } from 'htm/preact';
-import BaseWrapper from './BaseWrapper.js';
+import BaseWrapper from './base-wrapper.js';
 
 const SectionContent = ({ data }) => html`
   <${BaseWrapper}>

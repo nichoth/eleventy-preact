@@ -1,7 +1,7 @@
 /* eslint-disable class-methods-use-this */
 import { html } from 'htm/preact';
 import render from 'preact-render-to-string';
-import App from './components/App.js';
+import App from './components/app.js';
 
 export default class Page {
   data() {

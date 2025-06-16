@@ -2,11 +2,11 @@ import { html } from 'htm/preact';
 import BaseWrapper from './base-wrapper.js';
 
 const LayoutDefault = ({ children }) => html`
-  <div class="LayoutDefault">
+  <div class="layout-default">
     <main>
       ${children}
     </main>
-    <footer class="LayoutDefault__footer">
+    <footer class="layout-default-footer">
       <${BaseWrapper}>
         © Markus Oberlehner
       <//>

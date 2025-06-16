@@ -3,11 +3,11 @@ import BaseWrapper from './base-wrapper.js';
 
 const SectionTeaser = ({ data }) => html`
   <${BaseWrapper}>
-    <div class="SectionTeaser">
+    <div class="section-teaser">
       ${data.map(teaser => html`
-        <div class="SectionTeaser__item">
+        <div class="section-teaser-item">
           <img
-            class="SectionTeaser__image"
+            class="section-teaser-image"
             src=${teaser.image}
             alt=${teaser.title}
             loading="lazy"

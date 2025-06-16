@@ -1,6 +1,6 @@
-.LayoutDefault__footer {
-  margin-top: 5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+/* Layout default component */
+.layout-default-footer {
   border-top: 1px solid #efefef;
+  margin-top: 5em;
+  padding-block: 1em;
 }

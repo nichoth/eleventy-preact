@@ -1,16 +1,17 @@
-.SectionMasonry {
-  margin-top: -1em;
-  columns: 3 242px;
+/* Masonry section component */
+.section-masonry {
   column-gap: 1em;
+  columns: 3 242px;
+  margin-block-start: -1em;
   text-align: right;
 }
 
-.SectionMasonry__item {
-  padding-top: 1em;
-  page-break-inside: avoid;
+.section-masonry-item {
+  break-inside: avoid;
+  padding-block-start: 1em;
 }
 
-.SectionMasonry__image {
-  max-width: 100%;
+.section-masonry-image {
   height: auto;
+  max-width: 100%;
 }

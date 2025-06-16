@@ -1,28 +1,26 @@
-.SectionHero {
+/* Hero section component */
+.section-hero {
   position: relative;
 }
 
-.SectionHero__image {
-  max-width: 100%;
+.section-hero-image {
   height: auto;
+  max-width: 100%;
 }
 
-.SectionHero__info {
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  flex-direction: column;
-  justify-content: center;
+.section-hero-info {
   align-items: center;
+  background: linear-gradient(rgb(0 0 0 / 20%), transparent);
   color: #fff;
-  text-shadow: 0 0 0.75em rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
   font-size: 2em;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
 }
 
-.SectionHero__title {
-  margin-bottom: 0.25em;
+.section-hero-title {
   font-size: 2em;
+  margin-block-end: 0.25em;
 }

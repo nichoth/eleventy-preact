@@ -1,6 +1,6 @@
 import { html, render } from 'htm/preact';
 import whenVisible from './utils/when-visible.js';
-import LikeForm from './components/LikeForm.js';
+import LikeForm from './components/like-form.js';
 
 const componentMap = {
   LikeForm,
