@@ -1,6 +1,6 @@
 import { html } from 'htm/preact';
-import BaseWrapper from './BaseWrapper.js';
-import LikeForm from './LikeForm.js';
+import BaseWrapper from './base-wrapper.js';
+import LikeForm from './like-form.js';
 
 const SectionMasonry = ({ data }) => html`
   <${BaseWrapper}>

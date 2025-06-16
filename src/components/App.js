@@ -1,9 +1,9 @@
 import { html } from 'htm/preact';
-import LayoutDefault from './LayoutDefault.js';
-import SectionContent from './SectionContent.js';
-import SectionHero from './SectionHero.js';
-import SectionMasonry from './SectionMasonry.js';
-import SectionTeaser from './SectionTeaser.js';
+import LayoutDefault from './layout-default.js';
+import SectionContent from './section-content.js';
+import SectionHero from './section-hero.js';
+import SectionMasonry from './section-masonry.js';
+import SectionTeaser from './section-teaser.js';
 
 const sections = {
   content: SectionContent,

@@ -17,3 +17,5 @@ const SectionHero = ({ data }) => html`
 `;
 
 export default SectionHero;
+
+// No direct CSS import, but if you have one, use './section-hero.css'

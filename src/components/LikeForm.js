@@ -1,6 +1,7 @@
 import { html } from 'htm/preact';
 import { useState } from 'preact/hooks';
 import withHydration from './with-hydration.js';
+import './LikeForm.css';
 
 function LikeForm({ id }) {
   const [likes, setLikes] = useState(0);
