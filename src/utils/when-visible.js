@@ -1,5 +1,5 @@
-module.exports = function whenVisible($element, callback, options) {
-  if (typeof IntersectionObserver === `undefined`) {
+const whenVisible = ($element, callback, options) => {
+  if (typeof IntersectionObserver === 'undefined') {
     callback();
     return;
   }
@@ -13,3 +13,5 @@ module.exports = function whenVisible($element, callback, options) {
   }, options);
   observer.observe($element);
 };
+
+export default whenVisible;

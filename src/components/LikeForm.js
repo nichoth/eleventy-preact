@@ -1,7 +1,6 @@
-const { html } = require(`htm/preact`);
-const { useState } = require(`preact/hooks`);
-
-const withHydration = require(`./with-hydration`);
+import { html } from 'htm/preact';
+import { useState } from 'preact/hooks';
+import withHydration from './with-hydration.js';
 
 function LikeForm({ id }) {
   const [likes, setLikes] = useState(0);
@@ -28,4 +27,4 @@ function LikeForm({ id }) {
   `;
 }
 
-module.exports = withHydration(LikeForm);
+export default withHydration(LikeForm);

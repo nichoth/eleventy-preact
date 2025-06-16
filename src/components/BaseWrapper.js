@@ -1,7 +1,9 @@
-const { html } = require(`htm/preact`);
+import { html } from 'htm/preact';
 
-module.exports = ({ children }) => html`
+const BaseWrapper = ({ children }) => html`
   <div class="BaseWrapper">
     ${children}
   </div>
 `;
+
+export default BaseWrapper;

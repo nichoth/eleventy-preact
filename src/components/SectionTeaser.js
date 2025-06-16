@@ -1,8 +1,7 @@
-const { html } = require(`htm/preact`);
+import { html } from 'htm/preact';
+import BaseWrapper from './BaseWrapper.js';
 
-const BaseWrapper = require(`./BaseWrapper`);
-
-module.exports = ({ data }) => html`
+const SectionTeaser = ({ data }) => html`
   <${BaseWrapper}>
     <div class="SectionTeaser">
       ${data.map(teaser => html`
@@ -29,3 +28,5 @@ module.exports = ({ data }) => html`
     </div>
   <//>
 `;
+
+export default SectionTeaser;

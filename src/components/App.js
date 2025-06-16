@@ -1,10 +1,9 @@
-const { html } = require(`htm/preact`);
-
-const LayoutDefault = require(`./LayoutDefault`);
-const SectionContent = require(`./SectionContent`);
-const SectionHero = require(`./SectionHero`);
-const SectionMasonry = require(`./SectionMasonry`);
-const SectionTeaser = require(`./SectionTeaser`);
+import { html } from 'htm/preact';
+import LayoutDefault from './LayoutDefault.js';
+import SectionContent from './SectionContent.js';
+import SectionHero from './SectionHero.js';
+import SectionMasonry from './SectionMasonry.js';
+import SectionTeaser from './SectionTeaser.js';
 
 const sections = {
   content: SectionContent,
@@ -13,9 +12,9 @@ const sections = {
   teaser: SectionTeaser,
 };
 
-module.exports = ({ page }) => html`
+export default ({ page }) => html`
   <${LayoutDefault}>
-    <div class="App">
+    <div class="app">
       ${page.sections.map(({ data, name }) => html`
         <${sections[name]} data=${data}/>
       `)}

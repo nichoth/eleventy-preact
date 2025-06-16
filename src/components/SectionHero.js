@@ -1,6 +1,6 @@
-const { html } = require(`htm/preact`);
+import { html } from 'htm/preact';
 
-module.exports = ({ data }) => html`
+const SectionHero = ({ data }) => html`
   <div class="SectionHero">
     <img
       class="SectionHero__image"
@@ -15,3 +15,5 @@ module.exports = ({ data }) => html`
     </p>
   </div>
 `;
+
+export default SectionHero;

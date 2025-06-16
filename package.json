@@ -1,9 +1,5 @@
 {
-  "name": "eleventy-preact",
-  "version": "0.1.0",
-  "author": "Markus Oberlehner",
-  "homepage": "https://github.com/maoberlehner/eleventy-preact",
-  "license": "MIT",
+  "type": "module",
   "private": true,
   "scripts": {
     "//build": "NODE_ENV=production concurrently 'eleventy' 'npm run scripts:app' 'npm run styles'",
@@ -23,7 +19,7 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.1",
-    "dotenv": "^16.5.0",
+    "@11tyrocks/eleventy-plugin-lightningcss": "^1.4.0",
     "htm": "^3.1.1",
     "preact": "^10.26.9",
     "preact-render-to-string": "^6.5.13"
@@ -32,6 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^8.34.0",
     "@typescript-eslint/parser": "^8.34.0",
     "concurrently": "^9.1.2",
+    "dotenv": "^16.5.0",
     "esbuild": "^0.25.5",
     "eslint": "^8.57.1",
     "eslint-config-standard": "^17.1.0",

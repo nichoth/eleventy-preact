@@ -1,14 +1,12 @@
-const { html, render } = require(`htm/preact`);
-
-const whenVisible = require(`./utils/when-visible`);
-
-const LikeForm = require(`./components/LikeForm`);
+import { html, render } from 'htm/preact';
+import whenVisible from './utils/when-visible.js';
+import LikeForm from './components/LikeForm.js';
 
 const componentMap = {
   LikeForm,
 };
 
-const $componentMarkers = document.querySelectorAll(`[data-cmp-id]`);
+const $componentMarkers = document.querySelectorAll('[data-cmp-id]');
 
 Array.from($componentMarkers).forEach(($marker) => {
   const $component = $marker.nextElementSibling;

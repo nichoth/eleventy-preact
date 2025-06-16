@@ -1,9 +1,8 @@
-const { html } = require(`htm/preact`);
+import { html } from 'htm/preact';
+import BaseWrapper from './BaseWrapper.js';
+import LikeForm from './LikeForm.js';
 
-const BaseWrapper = require(`./BaseWrapper`);
-const LikeForm = require(`./LikeForm`);
-
-module.exports = ({ data }) => html`
+const SectionMasonry = ({ data }) => html`
   <${BaseWrapper}>
     <div class="SectionMasonry">
       ${data.images.map(({ alt, id, src }) => html`
@@ -20,3 +19,5 @@ module.exports = ({ data }) => html`
     </div>
   <//>
 `;
+
+export default SectionMasonry;

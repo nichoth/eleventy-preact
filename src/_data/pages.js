@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     date: new Date(),
     name: `Hello World`,

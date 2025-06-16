@@ -1,8 +1,7 @@
-const { html } = require(`htm/preact`);
+import { html } from 'htm/preact';
+import BaseWrapper from './BaseWrapper.js';
 
-const BaseWrapper = require(`./BaseWrapper`);
-
-module.exports = ({ children }) => html`
+const LayoutDefault = ({ children }) => html`
   <div class="LayoutDefault">
     <main>
       ${children}
@@ -14,3 +13,5 @@ module.exports = ({ children }) => html`
     </footer>
   </div>
 `;
+
+export default LayoutDefault;

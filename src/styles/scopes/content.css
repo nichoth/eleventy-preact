@@ -1,0 +1,40 @@
+.s-content {
+  line-height: 1.5;
+}
+
+.s-content > :not(:first-child) {
+  margin-top: 1em;
+}
+
+.s-content h1 {
+  font-size: 2.027em;
+}
+
+.s-content h2 {
+  font-size: 1.802em;
+}
+
+.s-content h3 {
+  font-size: 1.602em;
+}
+
+.s-content h4 {
+  font-size: 1.424em;
+}
+
+.s-content h5 {
+  font-size: 1.266em;
+}
+
+.s-content strong {
+  font-weight: 600;
+}
+
+.s-content li {
+  list-style-type: none;
+}
+
+.s-content li::before {
+  margin-right: 0.5em;
+  content: '●';
+}

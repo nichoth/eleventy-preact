@@ -1,10 +1,9 @@
 /* eslint-disable class-methods-use-this */
-const { html } = require(`htm/preact`);
-const render = require(`preact-render-to-string`);
+import { html } from 'htm/preact';
+import render from 'preact-render-to-string';
+import App from './components/App.js';
 
-const App = require(`./components/App`);
-
-module.exports = class Page {
+export default class Page {
   data() {
     return {
       title: `Setting up Eleventy with Preact and htm`,
@@ -22,4 +21,4 @@ module.exports = class Page {
   render(data) {
     return render(html`<${App} page=${data.page}/>`);
   }
-};
+}
