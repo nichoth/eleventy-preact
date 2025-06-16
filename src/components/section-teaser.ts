@@ -1,6 +1,6 @@
-import { html } from 'htm/preact';
-import type { ComponentType } from 'preact';
-import BaseWrapper from './base-wrapper';
+import { html } from 'htm/preact'
+import type { ComponentType } from 'preact'
+import BaseWrapper from './base-wrapper'
 
 interface TeaserData {
   image: string;
@@ -39,6 +39,6 @@ const SectionTeaser: ComponentType<Props> = ({ data }) => html`
       `)}
     </div>
   <//>
-`;
+`
 
-export default SectionTeaser;
+export default SectionTeaser

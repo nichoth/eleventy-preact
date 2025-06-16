@@ -1,21 +1,21 @@
-import { html } from 'htm/preact';
-import { useState } from 'preact/hooks';
-import type { ComponentType } from 'preact';
-import withHydration from './with-hydration';
-import './like-form.css';
+import { html } from 'htm/preact'
+import { useState } from 'preact/hooks'
+import type { ComponentType } from 'preact'
+import withHydration from './with-hydration'
+import './like-form.css'
 
 interface Props {
   id: number;
 }
 
 const LikeForm: ComponentType<Props> = ({ id }) => {
-  const [likes, setLikes] = useState(0);
-  const handleClick = (e) => {
-    e.preventDefault();
-    setLikes(likes + 1);
-  };
+    const [likes, setLikes] = useState(0)
+    const handleClick = (e) => {
+        e.preventDefault()
+        setLikes(likes + 1)
+    }
 
-  return html`
+    return html`
     <form
       action=${`/like/${id}`}
       method="post"
@@ -30,7 +30,7 @@ const LikeForm: ComponentType<Props> = ({ id }) => {
       </button>
       ${likes}
     </form>
-  `;
+  `
 }
 
-export default withHydration(LikeForm);
+export default withHydration(LikeForm)

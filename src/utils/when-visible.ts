@@ -1,11 +1,11 @@
 type CallbackFn = () => void;
 
 const whenVisible = (
-  $element: Element,
-  callback: CallbackFn,
-  options?: IntersectionObserverInit
+    $element: Element,
+    callback: CallbackFn,
+    options?: IntersectionObserverInit
 ): void => {
-  // ...existing code...
-};
+    // ...existing code...
+}
 
-export default whenVisible;
+export default whenVisible

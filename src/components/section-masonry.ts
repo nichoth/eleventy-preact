@@ -1,7 +1,7 @@
-import { html } from 'htm/preact';
-import type { ComponentType } from 'preact';
-import BaseWrapper from './base-wrapper';
-import LikeForm from './like-form';
+import { html } from 'htm/preact'
+import type { ComponentType } from 'preact'
+import BaseWrapper from './base-wrapper'
+import LikeForm from './like-form'
 
 interface ImageData {
   alt: string;
@@ -31,6 +31,6 @@ const SectionMasonry: ComponentType<Props> = ({ data }) => html`
       `)}
     </div>
   <//>
-`;
+`
 
-export default SectionMasonry;
+export default SectionMasonry

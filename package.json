@@ -13,9 +13,8 @@
     "styles": "node-sass --importer node_modules/node-sass-magic-importer/dist/cli.js -o dist src/styles/index.scss",
     "styles:watch": "chokidar 'src/**/*.scss' -c 'npm run styles'",
     "watch": "concurrently 'npm run scripts:app:watch' 'npm run styles:watch'",
-    "lint:scripts": "eslint --ext .js .",
     "lint:styles": "stylelint 'src/**/*.scss'",
-    "lint": "concurrently 'npm run lint:scripts' 'npm run lint:styles'"
+    "lint": "eslint \"./**/*.{ts,js}\""
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.1",

@@ -1,6 +1,6 @@
-import { html } from 'htm/preact';
-import type { ComponentType, ComponentChildren } from 'preact';
-import BaseWrapper from './base-wrapper';
+import { html } from 'htm/preact'
+import type { ComponentType, ComponentChildren } from 'preact'
+import BaseWrapper from './base-wrapper'
 
 interface Props {
   children: ComponentChildren;
@@ -17,6 +17,6 @@ const LayoutDefault: ComponentType<Props> = ({ children }) => html`
       <//>
     </footer>
   </div>
-`;
+`
 
-export default LayoutDefault;
+export default LayoutDefault
