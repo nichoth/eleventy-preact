@@ -1,5 +1,3 @@
-dist
-node_modules
-
-!.eleventy.js
-!.eslintrc.js
+dist/*
+public/*
+test/*.js

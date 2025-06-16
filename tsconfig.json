@@ -1,15 +1,18 @@
 {
   "compilerOptions": {
     "listFiles": true,
-    "module": "ES2022",
+    "module": "esnext",
     "target": "ES2022",
+    "types": [
+      "@types/node",
+    ],
+    "typeRoots": ["./node_modules"],
     "moduleResolution": "Bundler",
     "esModuleInterop": false,
     "lib": ["ES2022", "DOM", "WebWorker"],
-    "types": ["vite/client"],
     "allowJs": false,
     "skipLibCheck": true,
-    "outDir": "dist",
+    "outDir": "public",
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -20,11 +23,11 @@
     "isolatedModules": true,
     "noImplicitAny": false,
     "declaration": true,
-    "declarationDir": "dist",
-    "declarationMap": true
+    "declarationDir": "public",
+    "declarationMap": true,
   },
   "include": [
-    "example",
+    "src/*",
     "src/**/*",
     "test",
     "lib.es5.d.ts"

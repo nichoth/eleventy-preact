@@ -23,8 +23,11 @@ export default async function (config) {
     config.addExtension(['ts'], {
           outputFileExtension: 'js',
           compile: jsCompiler
-    })
+    });
 
+    // Ignore CSS files in 11ty processing
+    config.ignores.add("src/**/*.css");
+    
     return {
         dir: {
             input: 'src',

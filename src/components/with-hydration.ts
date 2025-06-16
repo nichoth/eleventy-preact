@@ -1,9 +1,9 @@
-import { html } from 'htm/preact';
-import isServer from '../utils/is-server.js';
+const { html } = require(`htm/preact`);
+const isServer = require(`../utils/is-server`);
 
 let id = 0;
 
-const withHydration = (Component) => (props) => {
+export default (Component) => (props) => {
   id += 1;
 
   const scriptSrc = `
@@ -15,5 +15,3 @@ const withHydration = (Component) => (props) => {
     <${Component} ...${props}/>
   `;
 };
-
-export default withHydration;
