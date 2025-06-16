@@ -1,7 +1,7 @@
 import { html } from 'htm/preact'
 import render from 'preact-render-to-string'
 import type { VNode } from 'preact'
-import App from './components/app'
+import App from './components/app.js'
 
 interface PageData {
   page: {
@@ -22,9 +22,9 @@ export default class {
                 data: 'pages',
                 size: 1,
                 alias: 'page',
-                addAllPagesToCollections: true
+                addAllPagesToCollections: true,
             },
-            permalink: ({ page }: PageData) => `/${page.slug}/index.html`
+            permalink: ({ page }: PageData) => `/${page.slug}/index.html`,
         }
     }
 
