@@ -27,6 +27,8 @@
     "declarationMap": true
   },
   "include": [
+    "./*.ts",
+    "./*.js",
     "src/*",
     "src/**/*",
     "test",
