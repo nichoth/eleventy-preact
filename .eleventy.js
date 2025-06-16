@@ -20,7 +20,7 @@ export default async function (config) {
     */
     config.addPlugin(lightningCSS)
 
-    config.addExtension(['ts'], {
+    config.addExtension(['js', 'ts'], {
           outputFileExtension: 'js',
           compile: jsCompiler
     });

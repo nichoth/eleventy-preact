@@ -1,31 +1,38 @@
 import { html, render } from 'htm/preact'
-import whenVisible from './utils/when-visible.js'
-import LikeForm from './components/like-form.js'
+import whenVisible from './utils/when-visible'
+import type { ComponentType } from 'preact'
+import LikeForm from './components/like-form'
 
 declare global {
-    interface Window { __STATE__: any; }
+    interface Window {
+        __STATE__: {
+            components: Record<string, {
+                name: string;
+                props: Record<string, unknown>;
+            }>;
+        };
+    }
 }
 
-const componentMap = {
+const componentMap: Record<string, ComponentType> = {
     LikeForm,
 }
 
-const $componentMarkers =
-    document.querySelectorAll('[data-cmp-id]') as NodeListOf<HTMLElement>
+const $componentMarkers
+    = document.querySelectorAll('[data-cmp-id]') as NodeListOf<HTMLElement>
 
-Array.from($componentMarkers).forEach(($marker:HTMLElement) => {
-    const $component = $marker.nextElementSibling!
+Array.from($componentMarkers).forEach(($marker) => {
+    const $component = $marker.nextElementSibling as HTMLElement
 
     whenVisible($component, () => {
-        const {
-            name,
-            props
-        } = window.__STATE__.components[$marker.dataset.cmpId!]
+        const { name, props } = window.__STATE__.components[$marker.dataset
+            .cmpId as string]
         const Component = componentMap[name]
 
         render(
             html`<${Component} ...${props}/>`,
-            $component.parentNode as HTMLElement
+            $component.parentNode as HTMLElement,
+            $component,
         )
     })
 })

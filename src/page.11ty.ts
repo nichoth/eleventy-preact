@@ -3,15 +3,17 @@ import render from 'preact-render-to-string'
 import type { VNode } from 'preact'
 import App from './components/app'
 
-interface Page {
-  slug: string;
-  sections: Array<{
-    name: string;
-    data: unknown;
-  }>;
+interface PageData {
+  page: {
+    slug: string;
+    sections: Array<{
+      name: string;
+      data: unknown;
+    }>;
+  };
 }
 
-export default class Page11ty {
+export default class {
     data () {
         return {
             title: 'Setting up Eleventy with Preact and htm',
@@ -22,11 +24,11 @@ export default class Page11ty {
                 alias: 'page',
                 addAllPagesToCollections: true,
             },
-            permalink: ({ page }: { page: Page }) => `/${page.slug}/index.html`,
+            permalink: ({ page }: PageData) => `/${page.slug}/index.html`,
         }
     }
 
-    render (data: { page: Page }): string {
+    render (data: PageData): string {
         return render(html`<${App} page=${data.page}/>` as VNode)
     }
 }
