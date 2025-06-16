@@ -8,12 +8,22 @@ import lightningCSS from '@11tyrocks/eleventy-plugin-lightningcss'
  * @param {import('@11ty/eleventy/UserConfig').default} config
  */
 export default async function (config) {
+    /**
+     * __lightningCSS__
+     * See {@link https://github.com/5t3ph/eleventy-plugin-lightningcss | Lightning CSS plugin docs}
+     *
+     * enables the following LightningCSS flags by default:
+     *   - bundling - enables including other files via the `@import` syntax
+     *   - nesting
+     *   - minify
+     *   - custom media queries
+    */
     config.addPlugin(lightningCSS)
 
-    config.addExtension('ts', {
+    config.addExtension(['ts'], {
           outputFileExtension: 'js',
           compile: jsCompiler
-      })
+    })
 
     return {
         dir: {
